@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>예산군청</title>
+</head>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="#">
+                <h1 id="logo">
+                    예산재난포털
+                </h1>
+            </a>
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="login.html">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#">재난정보서비스
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-service">
+                                    <ul>
+                                        <li>
+                                            <a href="manager.html">
+                                            <div class="sub-icon sub-icon1">
+                                                <img src="images/ico_nav1.png" alt="icon">
+                                                <img src="images/ico_nav1.png" alt="icon">
+                                            </div>
+                                            신청관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="transfer.html">
+                                            <div class="sub-icon sub-icon2">
+                                                <img src="images/ico_nav2.png" alt="icon">
+                                                <img src="images/ico_nav2.png" alt="icon">
+                                            </div>
+                                            재난정보전송</a>
+                                        </li>
+                                        <li>
+                                            <a href="record.html">
+                                            <div class="sub-icon sub-icon3">
+                                                <img src="images/ico_nav3.png" alt="icon">
+                                                <img src="images/ico_nav3.png" alt="icon">
+                                            </div>
+                                            재난정보전송이력</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">재난정보공유
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-share">
+                                    <ul>
+                                        <li>
+                                            <a href="current.html">
+                                            <div class="sub-icon sub-icon4">
+                                                <img src="images/ico_nav4.png" alt="icon">
+                                                <img src="images/ico_nav4.png" alt="icon">
+                                            </div>
+                                            재난정보제보현황</a>
+                                        </li>
+                                        <li>
+                                        <a href="currentwrite.html">
+                                            <div class="sub-icon sub-icon5">
+                                                <img src="images/ico_nav5.png" alt="icon">
+                                                <img src="images/ico_nav5.png" alt="icon">
+                                            </div>
+                                            재난정보등록</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">사용자관리
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-user">
+                                    <ul>
+                                        <li>
+                                            <a href="user-current.html">
+                                            <div class="sub-icon sub-icon6">
+                                                <img src="images/ico_nav6.png" alt="icon">
+                                                <img src="images/ico_nav6.png" alt="icon">
+                                            </div>
+                                            사용자 관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <div class="sub-icon sub-icon7">
+                                                <img src="images/ico_nav7.png" alt="icon">
+                                                <img src="images/ico_nav7.png" alt="icon">
+                                            </div>
+                                            사용자 그룹관리</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">내정보관리</a>
+                    </li>
+                    <li>
+                        <a href="#">게시판
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-board">
+                                    <ul>
+                                        <li>
+                                            <a href="notice.html">
+                                            <div class="sub-icon sub-icon8">
+                                                <img src="images/ico_nav8.png" alt="icon">
+                                                <img src="images/ico_nav8.png" alt="icon">
+                                            </div>
+                                            공지사항</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="gnb-bg-over"></div>
+    <div class="gnb-bg"></div>
+
+    <section>
+        <div class="container">
+            <div class="sub-tit">
+                <h4>전송이력보기</h4>
+            </div>
+
+            <div class="sub-search box mg-t60">
+                <div class="day-tit">
+                    <div class="day-line"></div>
+                    <h5>전송이력</h5>
+                </div>
+                <div class="search-wrap">
+                    <form action="" class="search-date">
+                        <input type="date">
+                    </form>
+                    <form action="">
+                        <select id="select">
+                            <option value="Date">전송날짜</option>
+                            <option value="Number">수신전화번호</option>
+                        </select>
+                    </form>
+                    <form action="" class="search-btn">
+                        <input type="search" placeholder="검색어를 입력해 주세요">
+                        <button type="button">검색</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sub-table box t1">
+                <table>
+                    <caption>검색결과</caption>
+                    <thead>
+                        <tr>
+                            <td>번호</td>
+                            <td>신청자 이름</td>
+                            <td>휴대폰번호</td>
+                            <td>전송메세지</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td>예산군 재난안전문자입니다.</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td>예산군 재난안전문자입니다.</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td>예산군 재난안전문자입니다.</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td>예산군 재난안전문자입니다.</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td>예산군 재난안전문자입니다.</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td>예산군 재난안전문자입니다.</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td>예산군 재난안전문자입니다.</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td>예산군 재난안전문자입니다.</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td>예산군 재난안전문자입니다.</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td>예산군 재난안전문자입니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer">
+            <div class="foot-logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="foot-cr">
+                <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+            </div>
+            <div class="foot-hack"></div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

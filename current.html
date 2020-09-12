@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>예산군청</title>
+</head>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <header id="header">
+        <div class="nav-wrapper">
+            <a href="#">
+                <h1 id="logo">
+                    예산재난포털
+                </h1>
+            </a>
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="login.html">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#">재난정보서비스
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-service">
+                                    <ul>
+                                        <li>
+                                            <a href="manager.html">
+                                            <div class="sub-icon sub-icon1">
+                                                <img src="images/ico_nav1.png" alt="icon">
+                                                <img src="images/ico_nav1.png" alt="icon">
+                                            </div>
+                                            신청관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="transfer.html">
+                                            <div class="sub-icon sub-icon2">
+                                                <img src="images/ico_nav2.png" alt="icon">
+                                                <img src="images/ico_nav2.png" alt="icon">
+                                            </div>
+                                            재난정보전송</a>
+                                        </li>
+                                        <li>
+                                            <a href="record.html">
+                                            <div class="sub-icon sub-icon3">
+                                                <img src="images/ico_nav3.png" alt="icon">
+                                                <img src="images/ico_nav3.png" alt="icon">
+                                            </div>
+                                            재난정보전송이력</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">재난정보공유
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-share">
+                                    <ul>
+                                        <li>
+                                            <a href="current.html">
+                                            <div class="sub-icon sub-icon4">
+                                                <img src="images/ico_nav4.png" alt="icon">
+                                                <img src="images/ico_nav4.png" alt="icon">
+                                            </div>
+                                            재난정보제보현황</a>
+                                        </li>
+                                        <li>
+                                        <a href="currentwrite.html">
+                                            <div class="sub-icon sub-icon5">
+                                                <img src="images/ico_nav5.png" alt="icon">
+                                                <img src="images/ico_nav5.png" alt="icon">
+                                            </div>
+                                            재난정보등록</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">사용자관리
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-user">
+                                    <ul>
+                                        <li>
+                                            <a href="user-current.html">
+                                            <div class="sub-icon sub-icon6">
+                                                <img src="images/ico_nav6.png" alt="icon">
+                                                <img src="images/ico_nav6.png" alt="icon">
+                                            </div>
+                                            사용자 관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <div class="sub-icon sub-icon7">
+                                                <img src="images/ico_nav7.png" alt="icon">
+                                                <img src="images/ico_nav7.png" alt="icon">
+                                            </div>
+                                            사용자 그룹관리</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">내정보관리</a>
+                    </li>
+                    <li>
+                        <a href="#">게시판
+                            <div class="sub-nav-wrap">
+                                <div class="sub-nav sub-board">
+                                    <ul>
+                                        <li>
+                                            <a href="notice.html">
+                                            <div class="sub-icon sub-icon8">
+                                                <img src="images/ico_nav8.png" alt="icon">
+                                                <img src="images/ico_nav8.png" alt="icon">
+                                            </div>
+                                            공지사항</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="gnb-bg-over"></div>
+    <div class="gnb-bg"></div>
+
+    <section>
+        <div class="container">
+            <div class="sub-tit">
+                <h4>제보현황</h4>
+            </div>
+
+            <div class="sub-search box mg-t60">
+                <div class="day-tit">
+                    <div class="day-line"></div>
+                    <h5>제보현황</h5>
+                </div>
+                <div class="search-wrap">
+                    <form action="">
+                        <select id="select">
+                            <option value="All">전체보기</option>
+                            <option value="Normal">일반게시</option>
+                            <option value="Delicate">내부게시</option>
+                        </select>
+                    </form>
+                    <form action="" class="search-btn">
+                        <select id="select">
+                            <option value="All">전체보기</option>
+                            <option value="Wait">대기</option>
+                            <option value="Approval">승인</option>
+                            <option value="Cancle">불허</option>
+                        </select>
+                        <button type="button">검색</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sub-table box t1 t2">
+                <table>
+                    <caption>검색결과</caption>
+                    <thead>
+                        <tr>
+                            <td>번호</td>
+                            <td>재난유형</td>
+                            <td>지역</td>
+                            <td>사진/동영상</td>
+                            <td>등록자</td>
+                            <td>등록일시</td>
+                            <td>삭제일시</td>
+                            <td>승인상태</td>
+                            <td>게시종류</td>
+                            <td>첨부파일여부</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td onclick="location.href='currentpost.html'">1</td>
+                            <td><span class="erq">지진</span></td>
+                            <td>예산군</td>
+                            <td class="photo">
+                                <video src="video/typn_video.mp4" type="mp4" controls></video> 
+                            </td>
+                            <td>홍길동</td>
+                            <td>2020-09-10</td>
+                            <td>2020-09-11</td>
+                            <td class="cancle">불허</td>
+                            <td class="normal">일반게시</td>
+                            <td><img src="images/icon/icon-attachfile.png" alt="첨부파일아이콘"></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td><span class="act">사고속보</span></td>
+                            <td>예산군</td>
+                            <td class="photo">
+                                <img src="images/act.jpg" alt="video"> 
+                            </td>
+                            <td>홍길동</td>
+                            <td>2020-09-10</td>
+                            <td>2020-09-11</td>
+                            <td class="approval">승인</td>
+                            <td class="normal">내부게시</td>
+                            <td><img src="images/icon/icon-attachfile.png" alt="첨부파일아이콘"></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td><span class="erq">대설</span></td>
+                            <td>예산군</td>
+                            <td class="photo">
+                                <img src="images/snowy.jpg" alt="video"> 
+                            </td>
+                            <td>홍길동</td>
+                            <td>2020-09-10</td>
+                            <td>2020-09-11</td>
+                            <td class="wait">대기</td>
+                            <td class="normal">일반게시</td>
+                            <td><img src="images/icon/icon-attachfile.png" alt="첨부파일아이콘"></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td><span class="typn">가축질병</span></td>
+                            <td>예산군</td>
+                            <td class="photo">
+                                <img src="images/animal.jpg" alt="video"> 
+                            </td>
+                            <td>홍길동</td>
+                            <td>2020-09-10</td>
+                            <td>2020-09-11</td>
+                            <td class="wait">대기</td>
+                            <td class="normal">일반게시</td>
+                            <td>-</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer">
+                <div class="page-null"></div>
+                <div class="num-list">
+                    <ul>
+                        <li><a href="#">
+                            <img src="images/icon/paginate-first.png" alt="first">
+                        </a>
+                        </li>
+
+                        <li><a href="#">
+                            <img src="images/icon/paginate-prev.png" alt="prev">
+                        </a>
+                        </li>
+
+                        <li><a href="#">1</a>
+                        </li>
+                        
+                        <li><a href="#">2</a>
+                       
+                        </li>
+
+                        <li><a  href="#">3</a>
+                        </li>
+
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+
+                        <li>
+                            <a href="#">6</a>
+                        </li>
+
+                        <li>
+                            <a href="#">7</a>
+                        </li>
+                        <li>
+                            <a href="#">8</a>
+                        </li>
+                        <li>
+                            <a href="#">9</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="images/icon/paginate-next.png" alt="next">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="images/icon/paginate-last.png" alt="last"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="write-btn">
+                    <button type="button" onclick="location.href='currentwrite.html'">글쓰기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer">
+            <div class="foot-logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="foot-cr">
+                <p>(우) 32435 충남 예산군 예산읍 군청로 22 Tel 041-339-7114 / Fax 041-339-7229</p>
+                <p>COPYRIGHT ⓒ YESAN COUNTRY.ALL RIGHTS RESERVED</p>
+            </div>
+            <div class="foot-hack"></div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

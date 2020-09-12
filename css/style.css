@@ -15,6 +15,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 a{
 	text-decoration: none;
@@ -26,18 +27,37 @@ li{
 body{
 	font-size: 16px;
 	font-family: "Noto Sans KR";
+	overflow-x: hidden;
+}
+.mg-t30{
+	margin-top: 30px;
+}
+.mg-t60{
+	margin-top: 60px;
+}
+#header{
+	/* width: 1240px; */
+
+	border-bottom: 1px solid #e2e2e2;
+	box-sizing: border-box;
+}
+h1{
+	margin: 0;
 }
 /* nav */
 .nav-wrapper{
 	width: 1240px;
-	line-height: 78px;
-	margin: 0 auto;
+	line-height: 90px;
+
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	left: 300px;
 }
 #logo{
 	width: 163px;
-	height: 100%;
+	height: auto;
 	background: url(../images/logo.png);
 	background-repeat: no-repeat;
 	background-position: 0;
@@ -50,7 +70,7 @@ body{
 	text-align: center;
 }
 .gnb > ul > li {
-	margin: 0 10px;
+	margin: 0 30px;
 }
 .gnb > ul > li > a {
 	font-size: 18px;
@@ -59,8 +79,15 @@ body{
 	font-weight: 600;
 	display: block;
 	line-height: 78px;
-	padding: 0 20px;
 	position: relative;
+}
+.gnb-bg-over{
+	width: 100%;
+	background: #fff;
+	height: 100px;
+	position: absolute;
+	z-index: 998;
+	display: none;
 }
 
 .sub-nav-wrap{
@@ -106,6 +133,598 @@ body{
     opacity: 1;
     display: none;
 }
+/* header end */
+
+/* section */
+section{
+	background: #f2f6f8;
+}
+.container{
+	width: 1240px;
+	height: auto;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+/* login */
+
+.login {
+    padding-top: 110px;
+    padding-bottom: 109px;
+}
+ .login-form{
+	width: 480px;
+	margin: 0 auto;
+	background: #fff;
+ }
+ .login-title h1{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	padding-top: 30px;
+	/* margin: 30px 0; */
+ }
+ .login-id, .login-password, .login-btn{
+	display: flex;
+	justify-content: center;
+	margin: 5px 0;
+ }
+ 
+ .login-id input{
+	width: 390px;
+	height: 40px;
+	border-radius: 5px;
+	padding-left: 10px;
+	border: 1px solid #ddd;
+ }
+ .login-id input:focus{
+	outline-color: #0a89c1;
+ }
+ .login-password input{
+	width: 390px;
+	height: 40px;
+	border-radius: 5px;
+	padding-left: 10px;
+	border: 1px solid #ddd;
+ }
+ .login-password input:focus{
+	 outline-color: #0a89c1;
+ }
+ 
+ .login-btn button{
+	width: 400px;
+	height: 40px;
+	border: none;
+	background: #263dbf;
+	color:#fff;
+ }
+ 
+ .login-checkbox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+ }
+ .login-checkbox > input{
+	 vertical-align: -1px;
+ }
+ .login-checkbox > span{
+	 margin-left: 5px;
+ }
+ .join{
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+	background: #f6f6f6;
+ }
+ .join div{
+	width: 50%;
+	text-align: center;
+ }
+ 
+ .join-find p{
+	width: 100%;
+	border-right: 1px solid #ccc;
+ }
+ .box{
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+ }
+
+
+ /* 회원가입  */
+
+.sign{
+    padding: 64px 0;
+}
+
+.sign-form{
+   width: 480px;
+   margin: 0 auto;
+   background: #fff;
+}
+.sign-title h1{
+   padding: 0;
+    text-align: center;
+    padding-top: 30px;
+    margin: 30px 0;
+}
+
+.sign-id input{
+   width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.sign-password input{
+   width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.sign-name input{
+   width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.sign-department input{
+   width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.sign-email input{
+   width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.sign-id,.sign-password,.sign-name,.sign-department,.sign-email{
+   display: flex;
+   justify-content: center;
+}
+.sign-title{
+   width: 400px;
+   margin: 0 auto;
+}
+.sign-title p{
+   font-size: 14px;
+   color: #666;
+}
+
+.sign-form div{
+   padding: 5px 0;
+}
+.sign-btn{
+   display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+.sign-btn button {
+    width: 400px;
+    height: 40px;
+    border: none;
+    background: #263dbf;
+   color: #fff;
+   /* padding-top: 30px; */
+    margin: 30px 0;
+}
+ 
+
+/* sub */
+.sub-tit{
+	box-sizing: border-box;
+}
+.sub-tit > h4 {
+	font-size: 28px;
+	color: #333;
+}
+
+.sub-search{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 13px 10px;
+}
+.item-flex{
+	display: flex;
+	align-items: center;
+}
+.day-tit{
+	display: flex;
+	align-items: center;
+}
+.day-tit > h5{
+	font-size: 18px;
+	font-weight: 400;
+}
+.day-line{
+	width: 4px;
+	margin-right: 8px;
+	height: 16px;
+	background: #0a89c1;
+}
+
+.search-wrap > form > select { 
+	width: 200px;
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	padding-left: 12px;
+	margin-right: 1px;
+}
+
+.search-wrap > form > select:focus{
+	outline: 1px solid #0a89c1;
+}
+
+.search-wrap{
+	display: flex;
+	align-items: center;
+}
+
+.search-date{
+	margin-right: 1px;
+}
+
+.search-btn{
+	display: flex;
+}
+.search-wrap > form > input{
+	width: 200px;
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	padding-left: 12px;
+	
+}
+.search-wrap > form > input:focus{
+	outline: 1px solid #0a89c1;
+	box-sizing: border-box;
+}
+.search-wrap > form > button{
+	width: 96px;
+	height: 36px;
+	line-height: 30px;
+	font-size: 14px;
+	border: 3px solid #0a83b8;
+	color: #fff;
+	background: #0a89c1;
+	margin-left: -1px;
+}
+
+/* 테이블영역 */
+.t1{
+	margin-top: 24px;
+	width: 1240px;
+	height: auto;
+	background: #fff;
+	padding-bottom: 15px;
+}
+.t1 > table{
+	width: 1240px;
+}
+.t1 > table > caption{
+	text-align : left;
+	margin-left: 15px;
+	margin-top: 15px;
+	caption-side: top;
+	
+}
+
+.t1 tr{
+	line-height: 39px;
+	height: 39px;
+}
+.t1 tr > td{
+	text-align: center;
+}
+.t1 thead > tr {
+	border-bottom: 1px solid #f4f4f4;
+	font-size: 14px;
+	color: #616161;
+	font-weight: 500;
+}
+.t1 tbody > tr{
+	font-size: 14px;
+	color: #757575;
+	font-weight: normal;
+	border-bottom: 1px solid #f4f4f4;
+}
+.t1 tbody > tr > td:first-child{
+	cursor: pointer;
+}
+.t1 tbody > tr > td:first-child:hover{
+	color: #0a89c1;
+}
+.t1 tbody > tr > td > span{
+	padding: 3px 5px;
+	border-radius: 3px;
+	color: #fff;
+}
+span.typn{
+	background: #7460ee;
+}
+span.erq{
+	background: #efb614 ;
+	padding: 3px 10px;
+	color: #fff;
+	border-radius: 5px;
+}
+span.act{
+	background :#f95454 
+}
+span.mcn{
+	background: #27a768;
+}
+
+/* 테이블2 t2 */
+.t2 > table > tbody > tr > td{
+	vertical-align: middle;
+}
+.t2 > table > tbody > tr > td {
+	vertical-align: middle;
+}
+td.cancle{
+	font-weight: 600;
+	color: #f95454;
+}
+td.wait{
+	font-weight: 600;
+}
+td.approval{
+	font-weight: 600;
+	color: #33bf7a;
+}
+td.wait{
+	font-weight: 600;
+	color: #dfa606;
+}
+td > video{
+	width: 262px;
+	height: 147px;
+}
+td.photo > img{
+	width: 262px;
+	height: 147px;
+}
+
+
+
+/* 재난정보작성 */
+.trans-result{
+	display: flex;
+	justify-content: space-between;
+}
+.trans-result > .page {
+	margin-left: 15px;
+}
+.page > p{
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+}
+.page-form{
+	display: flex;
+}
+.page-form > form:nth-child(2){
+	display: flex;
+}
+.page-form > form > select{
+	width: 100px;
+	height: 36px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	margin-right: 2px;
+}
+.page-form > form > select:focus{
+	outline: 2px solid #0a89c1;
+}
+.page-form > form > input{
+	width: 240px;
+	height: 36px;
+	border: 1px solid #ddd;
+	padding: 0 8px;
+}
+.page-form > form > input:focus{
+	outline: 2px solid #0a89c1;
+}
+.page-form >  form  > button{
+	width: 60px;
+	height: 36px;
+	font-size: 14px;
+	border: 3px solid #0a83b8;
+	box-sizing: border-box;
+	background: #0a89c1;
+	color: #fff;
+}
+
+/* 글쓰기페이지 하단 페이지 부분 */
+.page-footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 24px;
+}
+.num-list > ul {
+	display: flex;
+}
+.num-list > ul > li{
+	margin: 0 7px;
+}
+.write-btn > button{
+	width: 60px;
+	font-size: 14px;
+	text-align: center;
+	height: 36px;
+	color: #fff;
+	border: 3px solid #0a83b8;
+	background: #0a89c1;
+}
+
+/* 현황 글쓰기 페이지 */
+.current-container{
+	background: #fff;
+	margin-top: 64px;
+}
+.current-container > .row {
+	display: flex;
+	border-top: 1px solid #f4f4f4;
+	align-items: center;
+	padding-bottom: 10px;
+}
+.current-container label{
+	font-weight: lighter;
+	color: #333;
+}
+.current-container span{
+	font-weight: lighter;
+}
+.col-25 {
+	width: 25%;
+	margin-top: 10px;
+}
+.col-25 > label{
+	font-weight: bold;
+	padding-left: 15px;
+}
+.col-75{
+	width: 75%;
+	margin-top: 10px;
+}
+.current-name{
+	display: inline-block;
+	font-size: 16px;
+}
+.current-title, .current-box{
+	width: 95%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	resize: vertical;
+	border-radius: 4px;
+}
+.current-date{
+	font-size: 16px;
+	padding-top: 12px;
+	display: block;
+}
+.row > .col-75 span{
+	font-size: 16px;
+}
+.col-75 > .erq{
+	display: block;
+	width: 30px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+
+/* 제보현황 글쓰기 페이지 */
+.filebox .upload-name {
+    display: inline-block;
+    padding: .5em .75em;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.filebox label {
+    display: inline-block;
+    padding: .5em .75em;
+    color: #999;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+}
+.filebox.bs3-primary label {
+	background: url(../images/ico_attach.png)no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100px;
+	height: 100px;
+	padding: 1px;
+    text-align: center;
+}
+.filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.current-stat{
+	width: 241px;
+	height: 42px;
+	border: 1px solid #cccccc;
+	background: #fdfdfd;
+	padding: .5em .75em;
+}
+
+.post-row-btn{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+.post-row-btn input{
+	padding: 12px 20px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+input.menu{
+	background: #41bbff;
+}
+input.cancle{
+	background: #fa2829;
+}
+input.check{
+	margin-left: 5px;
+	background: #4CAF50;
+}
+
+.video-wrap > video{
+	width: 200px;
+	/* height: 100px; */
+}
+.image-wrap{
+	margin-top: 5px;
+}
+.image-wrap > img{
+	width: 200px;
+}
+.current-video > p{
+	margin-bottom: 10px;
+}
+/* 회원 현황 보기 */
+
+
+
+
+
+
+
+
+
 
 
 /* footer */
@@ -123,3 +742,14 @@ body{
 	font-weight: 400;
 	color: #777;
 }
+/* @media(min-width:1920px){
+	.gnb-bg{
+		width: 1920px;
+	}
+	.sub-nav-wrap{
+		width: 1920px;
+	}
+	#header{
+		width: 1220px;
+	}
+} */
